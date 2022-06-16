@@ -1,0 +1,144 @@
+@import "src/media/styles/variables";
+@import "src/media/styles/mixins";
+
+.button {
+  border-radius: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: $font-semi;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  &:disabled {
+    opacity: 0.5;
+    @include pointer-none;
+    color: $gray-40;
+    background-color: transparent;
+    border: 1px solid $gray-40;
+  }
+}
+
+.btn-size-xs {
+  padding: 0 10px;
+  height: 30px;
+  text-transform: none;
+}
+
+.btn-size-s {
+  width: 120px;
+  height: 24px;
+}
+
+.btn-size-m {
+  width: 180px;
+  height: 40px;
+}
+
+.btn-size-sm {
+  width: 160px;
+  height: 40px;
+}
+
+.btn-size-l {
+  width: 230px;
+  height: 40px;
+}
+
+.btn-size-xl {
+  width: 300px;
+  height: 40px;
+}
+
+.btn-color-pink {
+  color: $gray-10;
+  background-color: $pink;
+  border: 1px solid $pink;
+
+  &:hover:not([disabled]) {
+    background-color: $pink;
+    color: $dark-blue-30;
+    border-color: $pink;
+  }
+}
+
+.btn-color-green {
+  color: $dark-blue-30;
+  background-color: $green-20;
+  border: 1px solid $green-20;
+
+  &:hover:not([disabled]) {
+    background-color: $green-10;
+    border-color: $green-10;
+  }
+}
+
+.btn-color-blue {
+  color: $green-20;
+  background-color: $dark-blue-30;
+  border: 1px solid $dark-blue-30;
+
+  &:hover:not([disabled]) {
+    background-color: $dark-blue-10;
+    border-color: $dark-blue-10;
+  }
+}
+
+.btn-color-gray {
+  color: $gray-40;
+  background-color: $gray-10;
+  border: 1px solid $gray-10;
+
+  &:hover:not([disabled]) {
+    color: $dark-blue-30;
+    background-color: $green-10;
+  }
+}
+
+.btn-color-blue_transparent {
+  background-color: transparent;
+  color: $blue;
+  border: 1px solid $blue;
+
+  &:hover:not([disabled]) {
+    color: $dark-blue-30;
+    background-color: $blue;
+    border-color: $blue;
+  }
+}
+
+.btn-color-green_transparent {
+  background-color: transparent;
+  color: $green-30;
+  border: 1px solid $green-30;
+
+  &:hover:not([disabled]) {
+    color: $dark-blue-30;
+    background-color: $green-10;
+    border-color: $green-10;
+  }
+}
+
+.btn-color-orange_transparent {
+  background-color: transparent;
+  color: $orange;
+  border: 1px solid $orange;
+
+  &:hover:not([disabled]) {
+    color: $dark-blue-30;
+    background-color: $orange;
+    border-color: $orange;
+  }
+}
+
+.btn-color-pink_transparent {
+  background-color: transparent;
+  color: $pink;
+  border: 1px solid $pink;
+
+  &:hover:not([disabled]) {
+    color: $dark-blue-30;
+    background-color: $pink;
+  }
+}

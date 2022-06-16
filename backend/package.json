@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev-start": "pm2 start ecosystem.config.js",
+    "prod-start": "pm2 start ecosystem.config.js --env production",
+    "stag-start": "pm2 start ecosystem.config.js --env staging",
+    "list-app": "pm2 ls",
+    "restart-app": "pm2 restart cinema_server",
+    "stop-app": "pm2 stop cinema_server",
+    "log-app": "pm2 log",
+    "pm2-init": "pm2 init",
+    "api-doc-generation": "apidoc -i src/routes -o apidoc/",
+    "test": "NODE_ENV=test jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-status": "^1.4.2",
+    "nodemon": "^2.0.6",
+    "pm2": "^4.5.1",
+    "redis": "^3.0.2"
+  }
+}
